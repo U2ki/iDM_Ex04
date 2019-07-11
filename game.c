@@ -2,13 +2,15 @@
 #include <stdlib.h>
 #include <time.h>
 
-printf("お名前は何ですか？\n");
-scanf("%c",&name);
-
-printf("こんにちは%cさん！\n", &name);
 
 int main(void){
 int i,j,n;
+char name[20];
+
+printf("お名前は何ですか？\n");
+scanf("%c",&name);
+
+printf("こんにちは%sさん！\n", name);
 
 srand((unsigned)time(NULL));
 
