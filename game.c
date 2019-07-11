@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 
+printf("お名前は何ですか？\n");
+scanf("%c",&name);
+
+printf("こんにちは%cさん！\n", &name);
+
 int main(void){
 int i,j,n;
 
