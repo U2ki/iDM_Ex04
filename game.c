@@ -4,19 +4,23 @@
 
 
 int main(void){
-int i,j,n;
+int i,j,n,k;
 char name[20];
 
-printf("お名前は何ですか？\n");
+printf("What is your name?\n>");
 scanf("%s",name);
 
-printf("こんにちは%sさん！\n", name);
+printf("Hello,%s！\n", name);
 
 srand((unsigned)time(NULL));
 
 i = rand()%6+1;
 j = rand()%6+1;
-printf("%d+%d = %d\n",i,j,i+j);
+k = rand()%6+1;
+printf("Die 1:%d\nDie 2:%d\nDie 3:%d\nTotal value:%d\n",i,j,k,i+j+k);
+
+if((i+j+k)>=10) printf("%s won!\n",name );
+else printf("%s lose!\n",name );
 
 return 0;
 }
